@@ -6,6 +6,8 @@
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --navigation-bg: #f0f0f0;
+  --navigation-hover: #ccc;
 }
 
 [data-theme='dark'] {
@@ -16,6 +18,8 @@
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
+  --navigation-bg: #333;
+  --navigation-hover: #555;
 }
 
 body {
@@ -23,6 +27,15 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto 60px;
+}
+
+.navigation {
+  background-color: var(--navigation-bg);
+}
+
+.navigation li:hover,
+.navigation li.active {
+  background-color: var(--navigation-hover);
 }
 
 #root {

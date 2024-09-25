@@ -1,0 +1,94 @@
+.navigation {
+  position: sticky;
+  top: 0;
+  z-index: 70;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 20px 5px;
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation li {
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid var(--text-color);
+  border-bottom:2px solid var(--text-color);
+  transition: all 200ms ease-in-out;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navigation li.active {
+  transform: scale(1.1);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navigation li:hover {
+  transform: scale(1.15);
+  font-size: 22px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navigation li:active {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  color: var(--text-color);
+}
+
+[data-theme='dark'] .navigation {
+  background-color: var(--background-color);
+}
+
+[data-theme='dark'] .navigation li.active,
+[data-theme='dark'] .navigation li:hover,
+[data-theme='dark'] .navigation li:active {
+  color: var(--text-color);
+}
+
+@media(width >= 800px) {
+  .navigation {
+    gap: 30px;
+  }
+
+  .navigation ul {
+    gap: 30px;
+  }
+
+  .navigation li {
+    padding: 20px 100px;
+    font-size: 16px;
+  }
+}
+
+@media(width >= 1400) {
+  .navigation {
+    gap: 40px;
+  }
+
+  .navigation ul {
+    gap: 40px;
+  }
+
+  .navigation li {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}
