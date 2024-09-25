@@ -63,6 +63,37 @@
   color: var(--text-color);
 }
 
+@media (width <=600px) {
+  .navigation {
+    position: relative;
+    top: auto;
+  }
+
+  .navigation li {
+    padding: 8px 5px;
+    font-size: 12px; 
+  }
+}
+
+@media (width >= 600px) {
+  .navigation {
+    position: relative;
+    top: auto;
+  }
+  .navigation li {
+    padding: 8px 10px;
+    font-size: 12px;
+    border-bottom: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+  }
+  .navigation li:hover {
+    font-size: 16px;
+  }
+  .navigation ul {
+    gap: 10px;
+  }
+}
+
 @media(width >= 800px) {
   .navigation {
     gap: 30px;

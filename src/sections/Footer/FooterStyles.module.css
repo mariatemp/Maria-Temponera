@@ -5,3 +5,42 @@
     color: var(--footer-text-color);
   }
 }
+
+@media (width <= 600px) {
+  .footer p {
+    font-size: 12px;
+    padding: 5px 10px;
+    line-height: 1.3; 
+  }
+
+  .footer {
+    text-align: center; 
+    margin-top: 20px; 
+    padding-bottom: 40px;
+    position: relative;
+  }
+}
+
+@media (width >= 600px) {
+  .footer p {
+    font-size: 12px;
+    padding: 5px 10px;
+    line-height: 1.3;
+  }
+
+  .footer {
+    text-align: center; 
+    margin-top: 20px; 
+    padding-bottom: 40px;
+    position: relative;
+  }
+}
+
+@media (width < 800px) {
+  .footer {
+    text-align: center; 
+    margin-top: 20px; 
+    padding-bottom: 40px;
+    position: relative;
+  }
+}
