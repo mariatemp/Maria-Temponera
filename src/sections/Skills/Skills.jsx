@@ -19,7 +19,6 @@ function Skills() {
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill='React'/>
         <SkillList src={checkMarkIcon} skill='Java'/>
         <SkillList src={checkMarkIcon} skill='C#'/>
         <SkillList src={checkMarkIcon} skill='SQL Server Management Studio'/>

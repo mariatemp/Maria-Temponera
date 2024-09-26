@@ -12,7 +12,7 @@ function Projects() {
     <div className={styles.projectsContainer}>
       <ProjectCard src={viberr} link={'https://github.com/mariatemp/TODO'} h3='ToDo List' p='Task Management App'/>
       <ProjectCard src={freshBurger} link={'https://github.com/mariatemp/pokedex'} h3='Pokedex' p='Pokémon Database App'/>
-      <ProjectCard src={hipsster} link={'https://github.com/mariatemp/hotel-booking-app-frontend'} h3='Hotel-Booking(Fond-end)' p='Hotel Reservation Interface'/>
+      <ProjectCard src={hipsster} link={'https://github.com/mariatemp/hotel-booking-app-frontend'} h3='Hotel-Booking(Frond-end)' p='Hotel Reservation Interface'/>
       <ProjectCard src={fitLift} link={'https://github.com/mariatemp/HotelBookingApp-Backend'} h3='Hotel-Booking(Back-end)' p='Hotel Booking System'/>
     </div>
   </section>
